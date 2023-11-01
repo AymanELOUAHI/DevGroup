@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Résultats du formulaire</title>
+        <h1>Résultats de votre formulaire</h1>
+        <style>
+            h1 {
+                font-size: 24px;
+                color: #333;
+                text-align: center;
+            }
+            #res {
+                font-size: 16px;
+                color: #666;
+                margin: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                background-color: #f9f9f9;
+                line-height: 2.5;
+            }
+            img {
+                height: 180px;
+                width: 150px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="image">
+        <h2 id="res">Resultats de votre formulaire</h2>
+        <script>
+            var data=window.location.search;
+            var params= new URLSearchParams(data);
+            console.log(params)
+            var prenom=params.get("prenom");
+            var nom=params.get("nom");
+            var email=params.get("email");
+            var adresse=params.get("adresse");
+            var age=params.get("age");
+            var tel=params.get("tel");
+            var bio=params.get("bio");
+            var formation=params.get("formation");
+            var langages=params.get("langages");
+            var langues=params.get("langues");
+            var softskills=params.get("softskills");
+            var loisirs=params.get("loisirs");
+            var image=params.get("image");
+           
+
+            var getData ="Prénom: "+prenom+"<br>";
+                getData +="Nom: "+nom+"<br>";
+                getData +="Email: "+email+"<br>";
+                getData +="Adresse: "+adresse+"<br>";
+                getData +="Age: "+age+"<br>";
+                getData +="Numéro de téléphone: "+tel+"<br>";
+                
+                getData +="Expérience professionnelle: "+bio+"<br>";
+                getData +="Formation: "+formation+"<br>";
+                getData +="Langages de programmation: "+langages+"<br>";
+                getData +="Compétences linguistiques: "+langues+"<br>";
+                getData +="Compétences personnelles: "+softskills+"<br>";
+                getData +="Loisirs et autres informations: "+loisirs+"<br>";
+            
+            document.getElementById("res").innerHTML=getData;
+            document.getElementById("image").src=image ;
+    
+          </script>
+    </body>
+</html>

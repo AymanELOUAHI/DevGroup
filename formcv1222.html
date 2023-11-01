@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulaire de CV</title>
+    <link href="stylesform.css" rel="stylesheet" >
+  </head>
+  <body>
+    <h1>Formulaire CV</h1>
+    <p>Veuillez remplir le formulaire ci-dessous avec les informations demandées</p>
+    <div class="container">
+    <script src="Jserror.js"></script>
+    <form action="Jsresult.html" method="get">
+      <fieldset>
+        <label for="prenom">Entrez votre prénom: <input id="prenom" name="prenom" type="text" placeholder="Prenom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le prenom doit commencer par une majuscule et ne doit contenir que des lettres." required /></label>
+        <label for="nom">Entrez votre nom: <input id="nom" name="nom" type="text" placeholder="Nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Le nom doit commencer par une majuscule et ne doit contenir que des lettres." required /></label>
+        <label for="email">Entrer votre email: <input id="email" name="email" type="email" placeholder="nomprenom@gmail.com" required /></label>
+        <label for="adresse">Entrer votre adresse: <input id="adresse" name="adresse" type="text" placeholder="(ville,pays)" required /></label>
+        <label for="tel">Entrer votre numéro de téléphone : <input id="tel" name="tel" type="tel" placeholder="06........." required /></label>
+        <label for="age">Entrez votre age: <input id="age" type="number" name="age" min="18" required /></label>
+
+      </fieldset>
+      <fieldset>
+        <label for="image">Insérer votre photo de profil: <input id="image" type="file" name="image" /></label>
+        
+        
+        <label for="bio">Rédiger une petit paragraphe sur votre objectif professionnel: 
+          <textarea id="bio" name="bio" rows="9" cols="30"  placeholder="Ici, vous parler brièvement de vos objectifs et expériences professionnelles"></textarea>
+        </label>
+        <label for="formation">Parler des étapes de votre formation professionnelle: 
+            <textarea id="formation" name="formation" rows="9" cols="30" placeholder="Exemple: [Diplôme1 (type), ville, année, établissement];[Diplôme2 (type), ville, année, établissement];..."></textarea>
+          </label>
+      </fieldset>
+      <fieldset>
+        <label for="langages">Quels langages de programmation maîtrisez-vous ?
+            <input id="langages" name="langages" placeholder="Python , C , HTML , ..." />
+        </label>
+        <label for="langues">Quelles sont les langues que vous maîtrisez bien ?
+        <input id="langues" name="langues" placeholder="Anglais(avancé) , Français(courant) , Espagnol(courant) , ..." /> 
+        </label>
+        <label for="softskills">Quelles sont les langues que vous maîtrisez bien ?
+          <input id="softskills" name="softskills" placeholder="Communication , Travail en équipe , Leadership , ..." /> 
+        </label>
+        <label for="loisirs">Ajouter vos loisirs et d'autres informations utiles pour le CV : 
+            <textarea id="loisirs" name="loisirs" rows="3" cols="30" placeholder="Lecture , Musique , Sports , ... " ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Valider" />
+    </form>
+    </div>
+  </body>
+</html>
