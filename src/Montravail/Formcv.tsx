@@ -1,6 +1,6 @@
 export const Formcv = () => {
     return (
-        <div className="bg-blue-300 text-center">
+        <div className="bg-blue-400 text-center">
             <h1 className='text-3xl font-bold mt-5 mb-5'>Formulaire CV</h1>
             <p>Veuillez remplir le formulaire ci-dessous avec les informations demandées</p>
             <div className='mt-5 mb-5'>
@@ -22,7 +22,7 @@ export const Formcv = () => {
                         <label className='texl-xl font-bold mt-5 mb-5'>Rédiger une petit paragraphe sur votre objectif professionnel:<br></br>
                             <textarea className='w-1/2 mt-5 mb-5 h-40' id="bio" name="bio"  placeholder="Ici, vous parler brièvement de vos objectifs et expériences professionnelles"></textarea><br></br>
                         </label>
-                        <label className='texl-xl mt-5 mb-5'>Parler des étapes de votre formation professionnelle:<br></br>
+                        <label className='texl-xl font-bold mt-5 mb-5'>Parler des étapes de votre formation professionnelle:<br></br>
                             <textarea className='w-1/2 mt-5 mb-5 h-40' id="formation" name="formation"  placeholder="Exemple: [Diplôme1 (type), ville, année, établissement];[Diplôme2 (type), ville, année, établissement];..."></textarea><br></br>
                         </label>
                     </fieldset>
@@ -40,7 +40,7 @@ export const Formcv = () => {
                             <textarea className='w-1/2 mt-5 mb-5 h-10' id="loisirs" name="loisirs"  placeholder="Lecture , Musique , Sports , ... " ></textarea><br></br>
                         </label>
                     </fieldset>
-                    <input className='texl-2xl font-bold mt-5 mb-5' type="submit" value="Valider" />
+                    <input className='texl-2xl font-bold mt-5 mb-5' type="button" value="Valider" />
                 </form>
             </div>
         </div >

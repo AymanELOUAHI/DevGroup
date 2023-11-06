@@ -5,7 +5,7 @@ import { Routes, Route, NavLink } from  'react-router-dom';
 
 function App() {
   return (
-    <div className='container mt-10 mb-10' >
+    <div className='container bg-blue-800' >
       <nav className='flex justify-end'>
         <NavLink className='mr-3' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'})} to='/Pagecv'>Pagecv</NavLink><br></br>
         <NavLink className='mr-3' style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'normal'})} to='/Formcv'>Formcv</NavLink>

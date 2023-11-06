@@ -10,8 +10,8 @@ module.exports = {
       backgroundColor: 'beige',
       fontFamily: 'Arial, sans-serif',
       maxWidth: {
-        default: '600px',
-      }
+        width: '100%',
+      },
     },
     plugins: [],
   }
